@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+    <script src="../Javascript/signin.js"></script>
+    <script src="../Javascript/database.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div id="header" class="col s12 center">
+          <img src="../images/logo.png" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+         <div class="row">
+           <div class="input-field col s6">
+             <i class="material-icons prefix">account_circle</i>
+             <input  id="first_name" type="text" class="validate">
+             <label for="first_name">First Name</label>
+           </div>
+           <div class="input-field col s6">
+             <input id="last_name" type="text" class="validate">
+             <label for="last_name">Last Name</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <i class="material-icons prefix">email</i>
+             <input  id="email" type="text" class="validate">
+             <label for="email">Email</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="password" type="password" class="validate">
+             <label for="password">Password</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="password" type="password" class="validate">
+             <label for="password">Confirm Password</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col s12 center">
+             <p class="center">Gender</p>
+             <i class="material-icons">android</i>
+             <div id="GenderButtons" class="row left-align">
+               <div class="col m4 offset-m4">
+                 <p>
+                   <div class="col m4">
+                     <input name="Gender" type="radio" id="Male" />
+                     <label for="Male">Male</label>
+                   </div>
+                 </p>
+                 <p>
+                   <div class="col m4">
+                     <input name="Gender" type="radio" id="Female" />
+                     <label for="Female">Female</label>
+                   </div>
+                  </p>
+                  <p>
+                   <div class="col m4">
+                     <input name="Gender" type="radio" id="Other"  />
+                     <label for="Other">Other</label>
+                   </div>
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12 center">
+              <i class="material-icons prefix Large">pregnant_woman</i>
+              <input id="weight" type="text" class="validate">
+              <label for="Weight">Weight (lb)</label>
+            </div>
+          </div>
+          <div class="row" id="height">
+            <p class="center">Height</p>
+            <div class="input-select col s6">
+              <p class="center">Feet</p>
+              <select id="Feet"></select>
+           </div>
+           <div class="input-select col s6">
+             <p class="center">Inches</p>
+             <select id="Inches"></select>
+           </div>
+         </div>
+          <div class="row">
+            <div class="input-field col s12">
+            <div class="col s12 center">
+              <p class="center">Birthday</p>
+               <div class="input-select col s4">
+                 <select id='Month'>
+                   <option value="1">January</option>
+                   <option value="2">February</option>
+                   <option value="3">March</option>
+                   <option value="4">April</option>
+                   <option value="5">May</option>
+                   <option value="6">June</option>
+                   <option value-"7">July</option>
+                   <option value="8">August</option>
+                   <option value="9">September</option>
+                   <option value="10">October</option>
+                   <option value="11">November</option>
+                   <option value="12">December</option>
+                 </select>
+             </div>
+               <div class="input-select col s4">
+                 <select id='Day'></select>
+             </div>
+               <div class="input-select col s4">
+                 <select id='Year'></select>
+             </div>
+         </div>
+       </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <a id="signup" class="waves-effect waves-light btn blue">Sign Up</a>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

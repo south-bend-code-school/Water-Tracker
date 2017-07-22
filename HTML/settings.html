@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Settings</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Stylesheets -->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+   <!-- Scripts -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+      <script src="../Javascript/settings.js"></script>
+      <script src="../Javascript/database.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+    <!-- fixed home button -->
+    <div class="row">
+      <div class="fixed-action-btn horizontal">
+        <div class="btn-floating btn-large waves-effect waves-light blue">
+      <a href="../HTML/home.html"><i class="material-icons">home</i></a>
+     </div>
+   </div>
+ </div>
+
+    <!-- Logo -->
+    <div class="row" id="header">
+      <img class="col s12 m4 offset-m4" src="../images/logo.png">
+    </div>
+
+    <!-- profile pic-->
+    <div class="row">
+      <div id="profile" class="col s6 offset-s3 m2 offset-m5"></div>
+    </div>
+
+    <div class="row">
+      <form action="#">
+        <div class="file-field col s12 m12 center offset-m4">
+          <div class="btn col s12 m4 blue" id="changePic">
+            <span>Change Profile Picture</span>
+            <input type="file">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- settings -->
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="weight" type="password" class="validate">
+            <label for="weight">Weight (lbs)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="height" type="password" class="validate">
+            <label for="height">Height (ft)</label>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="input-field col s12">
+            <input id="time" type="password" class="validate">
+            <label for="time">Estimate amount of exercise in a day(hours)</label>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+    </div>
+  </div>
+  </body>
+</html>

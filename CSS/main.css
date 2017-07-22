@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #def4fd;
+}
+
+#profile {
+  background-image: url("http://americanmuslimconsumer.com/wp-content/uploads/2013/09/blank-user-570x563.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+}
+
+button {
+  height: 105px;
+  background-color: #2196f3 !important;
+}
+
+#header {
+  padding-bottom: 50px;
+}
+
+input {
+  text-align: center;
+}
+
+#questions {
+  padding: 15px;
+}
+
+#questions i {
+  font-size: 4em;
+}
+
+section {
+  padding-top: 30px;
+}
+
+#brendan {
+  background-image: url("../images/brendan.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#dione {
+  background-image: url("../images/dione.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#ruthie{
+  background-image: url("../images/ruthie.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#aliceya{
+  background-image: url("../images/aliceya.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#caleb{
+  background-image: url("../images/caleb.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#grace{
+  background-image: url("../images/grace.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+#aboutTop{
+  background-image: url("http://alkalinewaterpalmdesert.com/communities/1/000/001/645/401//images/8704790.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
