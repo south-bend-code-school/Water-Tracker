@@ -75,7 +75,6 @@
     updates ['/user/' + newUserKey] = user;
 
     firebase.database().ref().update(updates).then(function(){
-      alert("Success!");
       // added this line to create a session variable that will exist with all of our pages.
       sessionStorage.setItem('uid', newUserKey);
       window.location.replace('./home.html');
