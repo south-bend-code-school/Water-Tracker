@@ -129,7 +129,7 @@
     var exerciseT = exercise * 24;
     var currentWater = (water * 0.5) - (exercise * 24);
 
-    $("#totalOz").append('That is Great! You drank '+currentWater+' already! Now it is recommended that you drink an additional 24 ounces for every hour of exercise. In your case, you should drink an additional '+exerciseT+' ounces of water.');
+    $("#totalOz").append('That is Great! You drank '+water+' already! Now it is recommended that you drink an additional 24 ounces for every hour of exercise. In your case, you should drink an additional '+exerciseT+' ounces of water.');
 
     checkTotal(currentWater);
   }
